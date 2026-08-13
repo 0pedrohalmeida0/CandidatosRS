@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Por que NÃO votar · Piratini 2026</title>
+<title>Por que NÃO votar em cada um · Piratini 2026</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,630 +11,425 @@
 <!-- HERO -->
 <header class="hero">
   <div class="hero-content">
-    <h1>Por que <span class="accent">NÃO</span> votar em cada um</h1>
-    <p>Dossiê crítico dos candidatos ao governo do Rio Grande do Sul em 2026 — com base em decisões, posições, vínculos e promessas que são responsabilidade direta de cada um.</p>
-    <p class="meta">Atualizado em 13 de agosto de 2026 · Eleição 04/out/2026</p>
-    <div class="badges">
-      <span class="badge">🔍 Fontes linkadas</span>
-      <span class="badge">📊 4 candidatos</span>
-      <span class="badge">⚖️ Análise fundamentada</span>
-      <span class="badge">💬 Citações dos debates</span>
-    </div>
+    <span class="hero-tag">Edição Especial · 13/ago/2026</span>
+    <h1>Por que <span class="nao">NÃO</span><br><span class="demais">votar em cada um</span></h1>
+    <p class="subtitulo">Um dossiê provocativo sobre os quatro candidatos ao governo do Rio Grande do Sul em 2026 — e os motivos pelos quais nenhum deles me convenceu.</p>
+    <p class="data">Piratini 2026 · 1º turno: 04/out · 2º turno: 25/out</p>
   </div>
+  <div class="scroll-hint">↓ Leia</div>
 </header>
 
-<!-- CONTROLS -->
-<div class="controls">
-  <div class="nav-tabs">
-    <button class="nav-tab active" data-target="intro">📋 Visão geral</button>
-    <button class="nav-tab" data-target="brizola">🟥 Brizola</button>
-    <button class="nav-tab" data-target="souza">🟦 Souza</button>
-    <button class="nav-tab" data-target="zucco">🟨 Zucco</button>
-    <button class="nav-tab" data-target="maranata">🟩 Maranata</button>
-    <button class="nav-tab" data-target="tabela">📊 Comparação</button>
-    <button class="nav-tab" data-target="fontes">📚 Fontes</button>
+<!-- AVISO -->
+<section class="aviso">
+  <div class="aviso-box">
+    <strong>⚠️ Aviso</strong>
+    <p>Este <strong>não é</strong> um guia neutro de candidatos. É uma compilação pessoal dos motivos pelos quais, depois de cruzar o que cada um diz, o que já fez e o que é viável, eu não votaria em nenhum dos quatro principais nomes ao governo do RS em 2026.</p>
+    <p>Os fatos vêm de fonte pública. As interpretações e os vereditos são meus.</p>
+    <p>Se você quer um material isento, procure o TSE, o Promessômetro do Grupo RBS ou a cobertura dos jornais. Eles são bons no que fazem.</p>
+    <p>Aqui, o negócio é opinião documentada.</p>
   </div>
-  <button class="theme-toggle" id="themeToggle">🌓 Tema</button>
-</div>
+</section>
 
-<!-- CONTAINER -->
-<main class="container">
-
-  <!-- INTRO -->
-  <section id="intro" class="section fade-in">
-    <h2 class="section-title"><span class="emoji">🎯</span> O método deste dossiê</h2>
-    <p style="color: var(--text-soft); font-size: 1.05rem; margin-bottom: 24px;">
-      Este relatório foca apenas no que é <strong style="color:var(--text)">responsabilidade direta</strong> de cada candidato — decisões que tomaram, posições que assumiram, vínculos que escolheram, promessas que fizeram, contradições em que se meteram. Nada de "ele não controla a economia" ou "a votação foi baixa". Só o que está nas mãos deles.
-    </p>
-
-    <div class="counters">
-      <div class="counter brizola">
-        <div class="numero-counter" data-target="9">0</div>
-        <div class="label-counter">Podres · Brizola</div>
+<!-- VISÃO GERAL -->
+<section class="container">
+  <div class="overview">
+    <h2>Visão geral em uma tela</h2>
+    <div class="overview-grid">
+      <div class="overview-card brizola">
+        <div class="cand-nome">Juliana Brizola</div>
+        <div class="cand-partido">PDT · Esquerda</div>
+        <div class="cand-promessa">"Não aumentar impostos"</div>
+        <div class="cand-pancada">Quando tenta, perde.</div>
       </div>
-      <div class="counter souza">
-        <div class="numero-counter" data-target="10">0</div>
-        <div class="label-counter">Podres · Souza</div>
+      <div class="overview-card souza">
+        <div class="cand-nome">Gabriel Souza</div>
+        <div class="cand-partido">MDB · Situação</div>
+        <div class="cand-promessa">"Maior programa de irrigação do Brasil"</div>
+        <div class="cand-pancada">Promete evitar exatamente o que fez.</div>
       </div>
-      <div class="counter zucco">
-        <div class="numero-counter" data-target="12">0</div>
-        <div class="label-counter">Podres · Zucco</div>
+      <div class="overview-card zucco">
+        <div class="cand-nome">Luciano Zucco</div>
+        <div class="cand-partido">PL · Direita</div>
+        <div class="cand-promessa">"20 colégios cívico-militares"</div>
+        <div class="cand-pancada">Investigado pela PF por 8/jan e cortou microfone de deputada.</div>
       </div>
-      <div class="counter maranata">
-        <div class="numero-counter" data-target="12">0</div>
-        <div class="label-counter">Podres · Maranata</div>
+      <div class="overview-card maranata">
+        <div class="cand-nome">Marcelo Maranata</div>
+        <div class="cand-partido">PSDB · Centro</div>
+        <div class="cand-promessa">"1º cluster de saúde do Brasil"</div>
+        <div class="cand-pancada">Só conhece Guaíba.</div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="final-box">
-      <h2>🧨 A pergunta que fica</h2>
-      <p style="color: var(--text-soft); margin-bottom: 16px;">Olhando os quatro, o que cada um tem de <strong style="color:var(--text)">único e intransferível</strong> que justifique o voto?</p>
-      <div class="diferenciais">
-        <div class="diferencial">
-          <span class="emoji">🟥</span>
-          <strong>Brizola</strong>
-          <span>o sobrenome</span>
-        </div>
-        <div class="diferencial">
-          <span class="emoji">🟦</span>
-          <strong>Souza</strong>
-          <span>a máquina</span>
-        </div>
-        <div class="diferencial">
-          <span class="emoji">🟨</span>
-          <strong>Zucco</strong>
-          <span>o bolsonarismo</span>
-        </div>
-        <div class="diferencial">
-          <span class="emoji">🟩</span>
-          <strong>Maranata</strong>
-          <span>o capital</span>
-        </div>
-      </div>
-      <p style="color: var(--text-soft); margin-top: 20px;">Nenhum dos quatro tem <strong style="color:var(--text)">história limpa, plano verificável e coerência ideológica</strong>. A escolha é menos sobre "qual o melhor" e mais sobre qual o menos ruim no contexto.</p>
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">Piratini <span>2026</span></div>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-target="brizola">🟥 Brizola</button>
+      <button class="nav-tab" data-target="souza">🟦 Souza</button>
+      <button class="nav-tab" data-target="zucco">🟨 Zucco</button>
+      <button class="nav-tab" data-target="maranata">🟩 Maranata</button>
+      <button class="nav-tab" data-target="final">⚖️ Veredito</button>
     </div>
-  </section>
+  </div>
+</nav>
 
-  <!-- BRIZOLA -->
-  <section id="brizola" class="section fade-in">
-    <div class="candidato-header brizola">
-      <h2>🟥 Juliana Brizola <span class="partido-tag">PDT</span></h2>
-      <p class="subtitle">Coalizão PDT/PT/PSOL/PSB/PCdoB/Rede/PV/Avante · Vice: Edegar Pretto (PT)</p>
-      <div class="resumo">A candidata que sobreviveu do sobrenome do avô, nunca venceu disputa majoritária, mudou de aliança três vezes, e tem um programa baseado em promessas que dependem de dinheiro que ela diz que não vai cobrar.</div>
+<!-- BRIZOLA -->
+<section id="brizola" class="container candidato brizola fade-in">
+  <div class="candidato-header">
+    <span class="candidato-tag">PDT</span>
+    <h2 class="candidato-nome">Juliana Brizola</h2>
+    <p class="candidato-vice">Vice: Edegar Pretto (PT) · Coalizão PDT/PT/PSOL/PSB/PCdoB/Rede/PV/Avante</p>
+  </div>
+
+  <div class="bloco">
+    <h3 class="bloco-titulo"><span class="bloco-emoji">👤</span> Quem é</h3>
+    <div class="bloco-conteudo">
+      <p>Advogada de 51 anos, <strong>neta de Leonel Brizola</strong>. Está no PDT desde os 18 anos — partido fundado pelo avô. Foi secretária da Juventude em Porto Alegre por 4 meses, vereadora, e deputada estadual em três mandatos consecutivos.</p>
+      <p>Hoje lidera a aliança de 8 partidos de esquerda e é a primeira colocada nas pesquisas (~24%).</p>
     </div>
+  </div>
 
-    <div class="podre fade-in">
-      <span class="numero">01</span>
-      <h3><span class="badge-podre">CARREIRA</span> Carreira inteira em cima de um sobrenome</h3>
-      <p>Neta de Leonel Brizola, irmã gêmea de Leonel Brizola Neto, outro irmão é Brizola Neto. Partido do avô, fundado pelo avô. <strong>Sem o sobrenome, não há carreira.</strong></p>
-      <p>Quando o próprio Maranata perguntou no debate da Band o que ela administrou, a resposta foi nula — nunca geriu uma empresa, nunca comandou um órgão, nunca foi secretária de área fim. Foi secretária da <strong>Juventude por 4 meses em 2007</strong>.</p>
-      <p>Apropriação do "legado Brizola" como marketing pessoal é o cerne do projeto.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">02</span>
-      <h3><span class="badge-podre">CURRÍCULO</span> A candidata da "esquerda que não tem voto"</h3>
-      <p>Em três tentativas de disputar cargos majoritários, <strong>perdeu todas</strong>:</p>
+  <div class="bloco">
+    <h3 class="bloco-titulo"><span class="bloco-emoji">📋</span> O que promete</h3>
+    <div class="bloco-conteudo">
       <ul>
-        <li><strong>2016</strong>: vice na chapa de Sebastião Melo (MDB) em Porto Alegre. Perdeu no 2º turno.</li>
-        <li><strong>2020</strong>: disputou a prefeitura de Porto Alegre. Perdeu.</li>
-        <li><strong>2024</strong>: disputou a prefeitura de Porto Alegre de novo. Ficou em 3º lugar.</li>
-      </ul>
-      <p>Foi suplente na disputa federal de 2022. <strong>Quando tenta, perde.</strong></p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">03</span>
-      <h3><span class="badge-podre">ALIANÇA</span> O PDT é o partido dela, mas o PT é o motor</h3>
-      <p>A aliança de 8 partidos só anda porque o <strong>PT entrou com máquina, tempo de TV e dinheiro</strong>. Vice é Edegar Pretto (PT), ex-prefeito de Canoas. Ela é a cara, mas quem dirige é a frente partidária.</p>
-      <p>Perguntada por Gabriel Souza sobre o que faria dos governos Olívio Dutra e Tarso Genro (PT), a resposta foi vaga: <em>"serei governadora do diálogo"</em>.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">04</span>
-      <h3><span class="badge-podre">COERÊNCIA</span> Mudou de lado três vezes — e nunca explica</h3>
-      <ul>
-        <li><strong>2007-2008</strong>: secretária no governo do MDB (José Fogaça).</li>
-        <li><strong>2016</strong>: vice de Sebastião Melo (MDB) na disputa pela Prefeitura de Porto Alegre. Hoje, Melo é alvo central dos ataques dela.</li>
-        <li><strong>2018-2022</strong>: votou com pautas do MDB no plenário da Assembleia como deputada.</li>
-        <li><strong>2026</strong>: ataca o MDB e tem o PT de vice. <strong>A coerência é de oportunidade</strong>.</li>
+        <li>Retomada do <strong>Pró-Hospitais</strong> (R$ 800 mi/ano via ICMS de empresas).</li>
+        <li>Adaptação do <strong>modelo VioGén</strong> espanhol para avaliação de risco de violência contra a mulher.</li>
+        <li>Escola de tempo integral ampliada e valorização docente.</li>
+        <li><strong>Não aumentar impostos</strong> — mesmo herdando déficit de R$ 4,8 bi em 2027.</li>
+        <li><strong>Fundo Constitucional para o Sul</strong> (nos moldes do Nordeste/Centro-Oeste).</li>
+        <li>Fim da escala 6×1.</li>
       </ul>
     </div>
+  </div>
 
-    <div class="podre fade-in">
-      <span class="numero">05</span>
-      <h3><span class="badge-podre">PROGRAMA</span> O Pró-Hospitais que nunca saiu do papel</h3>
-      <p>Foi proponente da lei enquanto deputada estadual. Promete R$ 800 milhões/ano via ICMS. O mecanismo <strong>depende de adesão voluntária de empresas</strong> — não há garantia de arrecadação. Nenhum governo estadual executou o programa em escala desde sua criação.</p>
-      <p>A proposta ressurge a cada eleição, como se fosse nova, e <strong>nunca teve execução concreta</strong>.</p>
+  <div class="bloco">
+    <h3 class="bloco-titulo problema"><span class="bloco-emoji">🚨</span> O PROBLEMA</h3>
+    <div class="problema-box bloco-conteudo">
+      <p><strong>Sem o sobrenome, não há carreira.</strong></p>
+      <p>A trajetória dela é umbilicalmente ligada ao legado do avô. Quando questionada no debate da Band sobre que políticas dos governos Olívio Dutra e Tarso Genro (PT) ela traria, a resposta foi vazia: <em>"serei governadora do diálogo"</em>.</p>
+      <p><strong>Mudou de aliança três vezes.</strong> Foi secretária de José Fogaça (MDB) em 2007, vice de Sebastião Melo (MDB) em 2016, votou com o MDB por 8 anos como deputada — e em 2026 ataca o MDB com o PT de vice. A coerência é de oportunidade.</p>
+      <p><strong>Quando tenta, perde.</strong> Perdeu 2016 (vice), 2020 (prefeitura POA) e 2024 (prefeitura POA). Em 2022, ficou como suplente na disputa federal. Em três tentativas majoritárias, zero vitórias.</p>
+      <p><strong>Pró-Hospitais: lei antiga, execução zero.</strong> Foi autora da proposta na Assembleia. O mecanismo depende de adesão voluntária de empresas — não há garantia de arrecadação. Nenhum governo estadual executou em escala. O número de "R$ 800 mi/ano" que ela apresenta não tem lastro histórico.</p>
+      <p><strong>"Não aumentar impostos" + programa de R$ bilhões</strong> = matemática que não fecha. A resposta pronta é "Fundo Constitucional do Sul" — que <strong>depende de aprovação federal</strong> e não é dinheiro novo.</p>
     </div>
+  </div>
 
-    <div class="podre fade-in">
-      <span class="numero">06</span>
-      <h3><span class="badge-podre">CONTRADIÇÃO</span> "Sou contra a escola cívico-militar" — mas tudo bem com concessões</h3>
-      <blockquote>"Não sou contra a concessão, mas acho que tem que ser feito com diálogo, não dá para ficar muito mais caro do que era antes, a tarifa tem que ser justa, e os investimentos promovidos têm que ser cobrados" — Juliana Brizola, debate Gaúcha</blockquote>
-      <p>Faz campanha contra "privatizações" no plano, mas <strong>aceita concessões se forem "negociadas"</strong>. Posição ambígua que abre brecha para o mesmo modelo que ela ataca.</p>
+  <div class="bloco">
+    <h3 class="bloco-titulo"><span class="bloco-emoji">🔍</span> A evidência</h3>
+    <div class="evidencia-lista">
+      <div class="evidencia-item">
+        <span class="evidencia-num">1</span>
+        <span class="evidencia-texto"><strong>Trajetória e alianças:</strong> <a href="https://gauchazh.clicrbs.com.br/politica/eleicoes/noticia/2026/08/conheca-juliana-brizola-candidata-ao-governo-do-rio-grande-do-sul-pelo-pdt-cmsgumuq3019j016jgukmrg18.html" target="_blank" rel="noopener">GZH — Conheça Juliana Brizola</a></span>
+      </div>
+      <div class="evidencia-item">
+        <span class="evidencia-num">2</span>
+        <span class="evidencia-texto"><strong>Pró-Hospitais sem execução confirmada:</strong> <a href="https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/07/25/pdt-lanca-juliana-brizola-como-candidata-ao-governo-do-rs.ghtml" target="_blank" rel="noopener">G1 — PDT lança Juliana</a></span>
+      </div>
+      <div class="evidencia-item">
+        <span class="evidencia-num">3</span>
+        <span class="evidencia-texto"><strong>"Não aumentar impostos" + déficit R$ 4,8 bi:</strong> <a href="https://sbtnews.sbt.com.br/noticia/politica/juliana-brizola-propoe-fundo-para-sul-e-critica-gestao-do-rs" target="_blank" rel="noopener">SBT News</a></span>
+      </div>
     </div>
+  </div>
 
-    <div class="podre fade-in">
-      <span class="numero">07</span>
-      <h3><span class="badge-podre">POSTURA</span> Frase mal-calculada sobre Guaíba</h3>
-      <p>No debate da Gaúcha, segundo Maranata, desdenhou de Guaíba como <em>"cidade pequena, pouco importante"</em>. Foi a munição que a adversária precisava — o símbolo da Metade Sul virou argumento contra ela.</p>
-      <p>É o tipo de frase que mostra o <strong>gap entre o discurso e a postura</strong> de quem não convive com a realidade do interior.</p>
+  <div class="bloco">
+    <h3 class="bloco-titulo veredito"><span class="bloco-emoji">⚖️</span> Meu veredito</h3>
+    <div class="veredito-box">
+      <p class="veredito-quote">É a candidata do sobrenome. Sem vitória majoritária, sem execução, sem fonte de receita. Boa para discurso; arriscada para o Piratini.</p>
     </div>
+  </div>
+</section>
 
-    <div class="podre fade-in">
-      <span class="numero">08</span>
-      <h3><span class="badge-podre">PROGRAMA</span> "Não aumentar impostos" — mas o programa precisa de R$ bilhões</h3>
-      <p>Plano de 4 eixos com 31 áreas temáticas, "fortalecimento da educação, saúde, assistência, infraestrutura, prevenção climática, inovação...". Reconhece que herdará déficit de R$ 4,8 bi. Como expandir tudo isso <strong>sem aumentar imposto e sem endividar mais</strong>?</p>
-      <p>A resposta pronta é "Fundo Constitucional do Sul" e "Funrigs" — <strong>propostas que dependem de aprovação federal</strong> e não são dinheiro novo.</p>
+<!-- SOUZA -->
+<section id="souza" class="container candidato souza fade-in">
+  <div class="candidato-header">
+    <span class="candidato-tag">MDB</span>
+    <h2 class="candidato-nome">Gabriel Souza</h2>
+    <p class="candidato-vice">Vice: Ernani Polo (PSD) · Coalizão MDB/PSD/PRD/União Brasil/Solidariedade</p>
+  </div>
+
+  <div class="bloco">
+    <h3 class="bloco-titulo"><span class="bloco-emoji">👤</span> Quem é</h3>
+    <div class="bloco-conteudo">
+      <p>Médico veterinário, 42 anos, atual vice-governador do RS no segundo mandato de Eduardo Leite. Foi deputado estadual em dois mandatos e presidente da Assembleia Legislativa.</p>
+      <p>É o <strong>candidato da situação</strong>. Vice: Ernani Polo (PSD). Coalizão com MDB, PSD, PRD, União Brasil e Solidariedade.</p>
     </div>
+  </div>
 
-    <div class="podre fade-in">
-      <span class="numero">09</span>
-      <h3><span class="badge-podre">CONDUTA</span> Irresponsabilidade documental</h3>
-      <p>Em 13/ago/2026, o plano final <strong>não foi protocolado no TRE</strong>. Atraso semelhante ao de Zucco, mas sem o mesmo alarde. Enquanto cobra responsabilidade dos adversários, a própria campanha não conseguiu entregar o documento-base no prazo.</p>
-      <div class="fonte">📰 Fontes: <a href="https://gauchazh.clicrbs.com.br/politica/eleicoes/noticia/2026/08/conheca-juliana-brizola-candidata-ao-governo-do-rio-grande-do-sul-pelo-pdt-cmsgumuq3019j016jgukmrg18.html" target="_blank" rel="noopener">GZH — Conheça Juliana Brizola</a> · <a href="https://ultimosegundo.ig.com.br/2026-07-29/quem-e-juliana-brizola--candidata-ao-governo-do-rs-pelo-pdt-.html" target="_blank" rel="noopener">iG — Quem é Juliana</a></div>
-    </div>
-  </section>
-
-  <!-- SOUZA -->
-  <section id="souza" class="section fade-in">
-    <div class="candidato-header souza">
-      <h2>🟦 Gabriel Souza <span class="partido-tag">MDB</span></h2>
-      <p class="subtitle">Coalizão MDB/PSD/PRD/União Brasil/Solidariedade · Vice: Ernani Polo (PSD)</p>
-      <div class="resumo">O herdeiro do governo Leite que não responde pelo passado, promete "maior irrigação do Brasil" sem fonte, defende privatização da Corsan e ainda tenta passar por novidade.</div>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">01</span>
-      <h3><span class="badge-podre">CARGO</span> Foi vice, parlamentar e hoje é o herdeiro — mas não responde pelo passado</h3>
-      <p>Foi vice de Eduardo Leite em 2 mandatos. <strong>Tudo que o governo fez, ele chancelou</strong>. Foi deputado estadual por 2 mandatos. Votou todas as medidas do governo. Hoje tenta se vender como "continuidade com ajustes", mas <strong>não aponta o que ajustaria no que ele mesmo ajudou a aprovar</strong>.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">02</span>
-      <h3><span class="badge-podre">PRIVATIZAÇÃO</span> Privatização da Corsan — a marca do governo que ele representa</h3>
-      <p>Leite vendeu o controle da Corsan para a Aegea em 2023 — uma das maiores privatizações de empresa estadual de saneamento do Brasil. O MDB estava na base. Gabriel era vice.</p>
-      <p>Hoje, com a enchente, a Aegea é a <strong>concessionária que responde pelo serviço de água em Porto Alegre</strong>, e é apontada como parte do problema na resposta ao desastre. Ele não só não se posicionou contra como foi peça do governo que vendeu.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">03</span>
-      <h3><span class="badge-podre">VICE</span> Vice Ernani Polo (PSD) — ligação com o escândalo Master/Vorcaro</h3>
-      <p>Polo é político histórico do PSDB/PSD do Vale do Taquari. Foi presidente da Assembleia Legislativa e secretário de Desenvolvimento Econômico. O <strong>escândalo do Banco Master/Vorcaro</strong> mexeu com o sistema financeiro nacional e teve desdobramentos no RS.</p>
-      <p>Sem envolvimento direto dele, mas a coligação MDB-PSD que coloca Polo na vice é a mesma coligação que responde politicamente pelo sistema financeiro envolvido.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">04</span>
-      <h3><span class="badge-podre">PROMESSA</span> "Maior programa de irrigação do Brasil" — promessa sem pé</h3>
-      <p>Anunciou como carro-chefe do plano. <strong>Não detalhou orçamento, fontes, áreas, tecnologia, estudos de viabilidade hídrica</strong>. O RS tem problemas de gestão da água, não de oferta pura — irrigação em larga escala exige outorga, licenciamento ambiental, capacidade de captação. Nada disso está no plano.</p>
-      <p>É marketing rural para fisgar o agronegócio sem responder como.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">05</span>
-      <h3><span class="badge-podre">GESTÃO</span> Dívida do Estado cresceu no governo que ele ajudou a fazer</h3>
-      <p>Em 2019 (1º ano de Leite), a dívida com a União era ~R$ 70 bi. Em 2025, <strong>passou de R$ 100 bi</strong>. O Propague (programa federal de renegociação) ainda não foi assinado — Leite está negociando, mas as condições que o RS quer (juros 0% real) <strong>não estão garantidas</strong>.</p>
-      <p><em>"Responsabilidade fiscal"</em> foi o discurso, e o resultado é aumentar dívida. Gabriel não responde por isso.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">06</span>
-      <h3><span class="badge-podre">CATÁSTROFE</span> Enchentes de 2024 — e o governo de Leite</h3>
-      <p>Em maio de 2024, a maior enchente da história do RS matou mais de 200 pessoas, desabrigou 600 mil. O governo de Leite, do qual Gabriel era vice, <strong>foi criticado pela resposta lenta, subdimensionamento da Defesa Civil, alertas tardios</strong>.</p>
-      <p>Hoje o governo fala que <em>"o Estado está infinitamente mais preparado"</em> — mas as obras estruturais de proteção (diques, comportas, dragagem) ainda não saíram do papel em escala. <em>"Plano Rio Grande"</em> é o nome, mas o que o Estado executou é menos do que o que sofreu.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">07</span>
-      <h3><span class="badge-podre">AUTORIA</span> Programa de governo sem assinatura autoral</h3>
-      <p>O movimento <em>"Vozes do Rio Grande"</em> é coordenado por <strong>José Fogaça</strong> (PPS/PMDB/MDB) — mesmo político que indicou Juliana Brizola para a Secretaria de Juventude em 2007 e foi vice dela em 2016. Ou seja: <strong>Fogaça é a ponte entre Juliana e Gabriel</strong>.</p>
-      <p>Isso mostra que o campo político do RS é mais <strong>circular do que polarizado</strong>, e a "nova geração" é herdeira das velhas alianças.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">08</span>
-      <h3><span class="badge-podre">EDUCAÇÃO</span> Aprovação automática — defende o indefensável</h3>
-      <p>O sistema de progressão parcial da Seduc/RS é visto como mecanismo de <strong>maquiagem de indicadores do IDEB</strong>. Zucco propôs revogar. Gabriel <strong>defendeu</strong> usando o argumento de que "escolas privadas têm sistema parecido".</p>
-      <blockquote>"Se comparar as escolas públicas com as escolas privadas, o IDEB aumentou. Sabe qual a diferença? Na escola pública, aumentou pela aprovação. Na escola privada, pelo aprendizado. Eu não sou contra o IDEB, eu sou contra a maquiagem que está sendo feita" — Luciano Zucco, debate Band</blockquote>
-      <p>Comparar escola pública estadual com escola privada é desonestidade intelectual — o problema é o contexto, não o instrumento. Gabriel não respondeu isso.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">09</span>
-      <h3><span class="badge-podre">DISCREPÂNCIA</span> Bate na gastança dos outros, mas não diz de onde vem o dele</h3>
-      <p>Frase famosa: <em>"Quem falar que vai fazer mil e uma coisas precisa dizer de onde vai tirar o dinheiro"</em>. <strong>Mas não disse de onde vai tirar o dinheiro</strong> para o "maior programa de irrigação do Brasil", nem para zerar filas de cirurgia, nem para as 23 casas de bombas.</p>
-      <p>É a cobrança vazia: cobra os outros, mas não faz a própria lição.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">10</span>
-      <h3><span class="badge-podre">CONDUTA</span> Privatizou, endividou e ainda não se posiciona</h3>
-      <p>O G1 mostrou que 25 de 39 promessas de Leite foram cumpridas, 8 em parte, 6 não. Mas Gabriel não diz <strong>quais das não cumpridas ele se arrepende</strong>, quais as que vai reverter, quais manter. É a campanha do silêncio cúmplice.</p>
-      <div class="fonte">📰 Fontes: <a href="https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/08/01/mdb-lanca-gabriel-souza-como-candidato-ao-governo-do-rs.ghtml" target="_blank" rel="noopener">G1 — MDB lança Gabriel</a> · <a href="https://www.correiodopovo.com.br/not%C3%ADcias/pol%C3%ADtica/elei%C3%A7%C3%B5es-2026-conheca-as-prioridades-dos-pre-candidatos-ao-governo-gaucho-1.1717572" target="_blank" rel="noopener">Correio do Povo — prioridades</a></div>
-    </div>
-  </section>
-
-  <!-- ZUCCO -->
-  <section id="zucco" class="section fade-in">
-    <div class="candidato-header zucco">
-      <h2>🟨 Luciano Zucco <span class="partido-tag">PL</span></h2>
-      <p class="subtitle">Coalizão PL/Progressistas/Republicanos/Novo/Podemos · Vice: Silvana Covate</p>
-      <div class="resumo">O candidato que foi chefe de segurança de Lula e Dilma, é investigado pela PF por 8/jan, cortou microfone de parlamentar, votou para extinguir o MPT, e entrega plano com atraso.</div>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">01</span>
-      <h3><span class="badge-podre">PF</span> Investigado pela PF por 8 de janeiro</h3>
-      <p>Em 2023, o ministro <strong>Alexandre de Moraes (STF)</strong> determinou a retomada de investigação da PF contra Zucco. A suspeita é de <strong>apoio, incentivo e patrocínio a atos golpistas</strong> no RS e em Brasília contra o resultado da eleição de 2022.</p>
-      <p>A Polícia Civil do RS já tinha apontado ele como <em>"incentivador"</em> dos atos antidemocráticos em novembro de 2022, por postagens convocando bolsonaristas a irem a protestos. <strong>Até o momento, não foi pronunciado nem condenado</strong>. Mas o fato é que a PF pediu para investigar, com base em indícios. Isso é incompatível com o cargo de governador.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">02</span>
-      <h3><span class="badge-podre">ABUSO</span> Cortou o microfone de uma deputada na CPI do MST</h3>
-      <p>Como presidente da CPI do MST, <strong>na primeira sessão, cortou o microfone da dep. Sâmia Bomfim (PSOL-SP)</strong>, que comentava que ele estava sendo investigado pela PF. Isso é <strong>abuso de poder regimental</strong>. A CPI serve para investigar, não para silenciar quem investiga o investigador.</p>
-      <p>Símbolo do método: quando questionado, cala.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">03</span>
-      <h3><span class="badge-podre">VOTO</span> Votou a favor de PEC para extinguir o MPT e a Justiça do Trabalho</h3>
-      <p>Em 2023, no escândalo de trabalho escravo nas vinícolas gaúchas, Zucco votou a favor de uma <strong>PEC que propunha extinguir o Ministério Público do Trabalho e a Justiça do Trabalho</strong>. MPT e JT são os dois principais instrumentos de combate ao trabalho escravo contemporâneo no Brasil.</p>
-      <p>A incoerência é gritante: <strong>vai investigar MST, mas quer acabar com quem fiscaliza trabalho escravo nas vinícolas do RS</strong>.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">04</span>
-      <h3><span class="badge-podre">CARREIRA</span> Foi do Republicanos e foi para o PL — sem explicar</h3>
-      <p>Eleito em 2018 pelo PSL (partido de Bolsonaro), depois migrou para o Republicanos, depois para o PL. <strong>É o mesmo personagem, mas a legenda muda conforme a conveniência</strong>.</p>
-      <p><em>"Tenente-coronel"</em> virou marca registrada — como se o título militar lhe desse superpoderes morais. Mas ex-chefe da segurança de <strong>Lula e Dilma</strong> virou palanque de Bolsonaro? É vira-casca assumido.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">05</span>
-      <h3><span class="badge-podre">PLANO</span> Plano de governo entregue com atraso — intimado pelo TRE</h3>
-      <p>O TRE-RS <strong>intimou a coligação por ausência do plano de governo</strong> no registro da candidatura (12/ago/2026). Plano só foi protocolado em 14/ago, após prazo de 72h. Justificativa da campanha: <em>"registro foi antecipado para obtenção do CNPJ"</em>.</p>
-      <p>Tradução: <strong>prioridade em papelada, não em conteúdo</strong>. Um candidato a governador que não consegue entregar um plano no prazo é, no mínimo, desorganizado.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">06</span>
-      <h3><span class="badge-podre">EDUCAÇÃO</span> "20 colégios cívico-militares" — modelo fracassado</h3>
-      <p>É o único candidato que defende expansão massiva desse modelo. Modelo <strong>custa 2 a 3 vezes mais por aluno</strong> que escola regular. <strong>Estudos (inclusive do TCU) apontam ganho pedagógico fraco ou nulo</strong> em escolas cívico-militares.</p>
-      <p>Os resultados positivos acontecem quando há boa gestão, e a militarização não é o fator decisivo. É projeto ideológico, não educacional. Vai custar caro e entregar pouco.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">07</span>
-      <h3><span class="badge-podre">POPULISMO</span> Revogação da "aprovação automática" — atinge 1% dos alunos</h3>
-      <p>Tema central da campanha, mas a própria Secretaria de Educação (citada por Gabriel) indica que <strong>cerca de 1% dos 700 mil alunos</strong> da rede estão no sistema de progressão parcial. <strong>Por que fazer disso prioridade de campanha?</strong> Para falar em "esquerda malvada" enquanto o problema real da educação gaúcha é evasão, alfabetização, infraestrutura — pautas que ele não detalha.</p>
-      <p>É populismo pedagógico.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">08</span>
-      <h3><span class="badge-podre">INFRA</span> Promessas de infraestrutura sem estudo</h3>
+  <div class="bloco">
+    <h3 class="bloco-titulo"><span class="bloco-emoji">📋</span> O que promete</h3>
+    <div class="bloco-conteudo">
       <ul>
-        <li><strong>"Porto meridional"</strong> — onde? Com qual capacidade? Para qual mercado? Sem EIA, sem estudo de demanda, sem localização definida.</li>
-        <li><strong>"Aeroporto na Serra Gaúcha"</strong> — qual cidade? Caxias, Bento, Farroupilha? Com qual modelo de viabilidade?</li>
-        <li><strong>"Concursos anuais" para PM</strong> — qual o custo? O Estado tem déficit primário projetado em R$ 4,8 bi para 2027. Promessa furada.</li>
+        <li>4 eixos: <strong>responsabilidade fiscal, capital humano, liberdade econômica, resiliência climática</strong>.</li>
+        <li><strong>"Maior programa de irrigação da história do Brasil"</strong> — carro-chefe da campanha.</li>
+        <li><strong>Adesão ao Propague</strong> em junho/2027 para reduzir juros sobre a dívida.</li>
+        <li><strong>InvestRS</strong> e selo "made in RS" para promoção comercial.</li>
+        <li>Manutenção do <strong>Plano Rio Grande</strong> e do legado Leite.</li>
+        <li>Aprimorar a <strong>aprendizagem</strong> como eixo central da educação.</li>
       </ul>
     </div>
+  </div>
 
-    <div class="podre fade-in">
-      <span class="numero">09</span>
-      <h3><span class="badge-podre">SEGURANÇA</span> Modelo de segurança: o falso remédio da tecnologia</h3>
-      <p><em>"Reconhecimento facial, videomonitoramento, drones, tótens"</em> — tudo isso já existe ou está sendo implementado. O problema da segurança no RS é gestão, inteligência, integração entre polícias e combate a facções dentro de presídios.</p>
-      <p>Falou em <em>"bloquear celular de presos"</em> e <em>"isolar lideranças de facções"</em> — propostas óbvias, mas que dependem de articulação federal e vontade do judiciário, não de decisão estadual isolada.</p>
+  <div class="bloco">
+    <h3 class="bloco-titulo problema"><span class="bloco-emoji">🚨</span> O PROBLEMA</h3>
+    <div class="problema-box bloco-conteudo">
+      <p><strong>Promete evitar exatamente o que fez.</strong></p>
+      <p>Foi vice de Leite por 6 anos, deputado da base por 8 anos. Votou todas as medidas — privatização da Corsan, RS-118, política de endividamento, modelo de educação. <strong>Não tem como dissociar sua candidatura do governo que ajudou a conduzir</strong>.</p>
+      <p class="pergunta">Se o governo foi tão ruim assim, por que o vice seria a solução?</p>
+      <p><strong>Privatização da Corsan</strong> foi uma das maiores vendas de estatal de saneamento do Brasil. Ele era vice. Chancelou.</p>
+      <p><strong>Enchente de maio/2024</strong> matou mais de 200 pessoas. Defesa Civil foi criticada por resposta lenta. Ele era vice. Chancelou.</p>
+      <p><strong>"Maior programa de irrigação do Brasil"</strong> — sem orçamento, sem fonte hídrica, sem EIA, sem cronograma. Magnitude sem lastro técnico. O número que ele jura ser o maior do Brasil, em debate, não respondeu de onde vem o dinheiro.</p>
+      <p><strong>Cobra transparência fiscal dos outros, mas não pratica.</strong> A frase dele: <em>"quem falar que vai fazer mil e uma coisas precisa dizer de onde vai tirar o dinheiro"</em>. No mesmo debate, não disse de onde vem o dinheiro do programa dele.</p>
+      <p><strong>Defende a "aprovação automática"</strong> com argumento desonesto. Zucco rebateu: <em>"na pública, o IDEB subiu pela aprovação; na privada, pelo aprendizado"</em>. Gabriel não respondeu ao mérito.</p>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <h3 class="bloco-titulo"><span class="bloco-emoji">🔍</span> A evidência</h3>
+    <div class="evidencia-lista">
+      <div class="evidencia-item">
+        <span class="evidencia-num">1</span>
+        <span class="evidencia-texto"><strong>Vice de Leite + privatização da Corsan + enchente:</strong> <a href="https://gauchazh.clicrbs.com.br/politica/eleicoes/noticia/2026/08/conheca-gabriel-souza-candidato-ao-governo-do-rio-grande-do-sul-pelo-mdb-cmsgqmu2k0192013liqysaxg8.html" target="_blank" rel="noopener">GZH — Conheça Gabriel Souza</a></span>
+      </div>
+      <div class="evidencia-item">
+        <span class="evidencia-num">2</span>
+        <span class="evidencia-texto"><strong>Dívida R$ 100 bi e Propague em negociação:</strong> <a href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2026/08/11/rs-faz-nova-proposta-ao-governo-federal-para-pagamento-de-divida-de-r-100-bilhoes-com-a-uniao.ghtml" target="_blank" rel="noopener">G1</a></span>
+      </div>
+      <div class="evidencia-item">
+        <span class="evidencia-num">3</span>
+        <span class="evidencia-texto"><strong>25 de 39 promessas de Leite cumpridas (14 não):</strong> <a href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2026/07/22/promessas-eduardo-leite-governador-do-rio-grande-do-sul.ghtml" target="_blank" rel="noopener">G1</a></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <h3 class="bloco-titulo veredito"><span class="bloco-emoji">⚖️</span> Meu veredito</h3>
+    <div class="veredito-box">
+      <p class="veredito-quote">É a continuidade. E a continuidade tem nome, tem cara e tem legado: Corsan privatizada, enchente mal atendida, dívida crescente. Trocar o médico veterinário pelo cavalo não muda a sela.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ZUCCO -->
+<section id="zucco" class="container candidato zucco fade-in">
+  <div class="candidato-header">
+    <span class="candidato-tag">PL</span>
+    <h2 class="candidato-nome">Luciano Zucco</h2>
+    <p class="candidato-vice">Vice: Silvana Covate · Coalizão PL/Progressistas/Republicanos/Novo/Podemos</p>
+  </div>
+
+  <div class="bloco">
+    <h3 class="bloco-titulo"><span class="bloco-emoji">👤</span> Quem é</h3>
+    <div class="bloco-conteudo">
+      <p>Tenente-Coronel da reserva, 51 anos, natural de Alegrete. <strong>Ex-chefe da segurança pessoal dos ex-presidentes Lula e Dilma</strong> durante o governo federal. Foi deputado estadual mais votado em 2018, deputado federal mais votado do RS em 2022 (259 mil votos).</p>
+      <p>Migrou do PSL → Republicanos → PL. Hoje preside a CPI do MST.</p>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <h3 class="bloco-titulo"><span class="bloco-emoji">📋</span> O que promete</h3>
+    <div class="bloco-conteudo">
+      <ul>
+        <li><strong>Revogação da "aprovação automática"</strong> (portaria 924/2024) como prioridade nº 1.</li>
+        <li><strong>Pacto Estadual pela Alfabetização</strong> — todas as crianças alfabetizadas até o 2º ano.</li>
+        <li><strong>20 colégios cívico-militares</strong> (ele é autor da lei).</li>
+        <li><strong>"Porto meridional"</strong> + <strong>"aeroporto na Serra Gaúcha"</strong> + duplicação de ferrovias.</li>
+        <li><strong>Concursos anuais permanentes</strong> para a Brigada Militar.</li>
+        <li>Reconhecimento facial, videomonitoramento, drones — segurança com tecnologia.</li>
+        <li><strong>Fundo Constitucional para o Sul e Sudeste</strong>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <h3 class="bloco-titulo problema"><span class="bloco-emoji">🚨</span> O PROBLEMA</h3>
+    <div class="problema-box bloco-conteudo">
+      <p><strong>Investigado pela PF por 8 de janeiro.</strong> O STF (ministro Alexandre de Moraes) <strong>determinou a retomada da investigação</strong> contra ele por suspeita de apoio a atos golpistas. A Polícia Civil já tinha apontado Zucco como "incentivador" dos atos antidemocráticos em novembro de 2022, por postagens convocando bolsonaristas a protestos. <strong>Não há condenação, mas não há esclarecimento cabal</strong> do candidato sobre o que de fato fez.</p>
+      <p><strong>Cortou o microfone de uma deputada na CPI do MST.</strong> Na primeira sessão da CPI, cortou o microfone da dep. Sâmia Bomfim (PSOL-SP), que comentava justamente a investigação da PF. Quando questionado, cala. É o método.</p>
+      <p><strong>Votou a favor de extinguir o MPT e a Justiça do Trabalho.</strong> Em 2023, no escândalo de trabalho escravo nas vinícolas gaúchas, votou a favor de PEC que propunha <strong>acabar com os dois principais instrumentos de combate ao trabalho escravo contemporâneo no Brasil</strong>. O candidato que caça invasão de terras quer acabar com quem fiscaliza trabalho escravo.</p>
+      <p><strong>Plano de governo entregue com atraso — intimado pelo TRE.</strong> O Tribunal Regional Eleitoral intimou a coligação por ausência do plano no registro da candidatura (12/ago). Documento só foi protocolado em 14/ago, após 72h. Para um candidato que cobra "ordem", é um tropeço.</p>
+      <p><strong>"Porto meridional" + "aeroporto na Serra Gaúcha" = número mágico.</strong> Não tem localização definida, nem EIA, nem estudo de viabilidade, nem fonte de recurso. Marketing de magnitude, sem base.</p>
+      <p><strong>20 colégios cívico-militares: o modelo custa mais caro e o ganho pedagógico é questionável.</strong></p>
+      <p class="pergunta">Se a proposta é gastar mais, a pergunta é simples: o aluno aprende proporcionalmente mais?</p>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <h3 class="bloco-titulo"><span class="bloco-emoji">🔍</span> A evidência</h3>
+    <div class="evidencia-lista">
+      <div class="evidencia-item">
+        <span class="evidencia-num">1</span>
+        <span class="evidencia-texto"><strong>Investigação da PF + Polícia Civil como "incentivador":</strong> <a href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2022/11/16/policia-aponta-deputado-federal-zucco-mais-votado-do-rs-como-incentivador-de-bloqueios-ilegais.ghtml" target="_blank" rel="noopener">G1</a></span>
+      </div>
+      <div class="evidencia-item">
+        <span class="evidencia-num">2</span>
+        <span class="evidencia-texto"><strong>Cortou microfone da dep. Sâmia Bomfim:</strong> <a href="https://www.cartacapital.com.br/politica/da-seguranca-de-dilma-ao-bolsonarismo-quem-e-o-deputado-zucco-presidente-da-cpi-do-mst/" target="_blank" rel="noopener">CartaCapital</a></span>
+      </div>
+      <div class="evidencia-item">
+        <span class="evidencia-num">3</span>
+        <span class="evidencia-texto"><strong>TRE intimou por falta de plano:</strong> <a href="https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/08/12/tre-rs-intima-zucco-por-ausencia-de-plano-de-governo-no-registro-de-candidatura.ghtml" target="_blank" rel="noopener">G1</a></span>
+      </div>
+      <div class="evidencia-item">
+        <span class="evidencia-num">4</span>
+        <span class="evidencia-texto"><strong>Voto pela extinção do MPT e JT:</strong> <a href="https://mst.org.br/2023/05/24/condenado-por-trabalho-escravo-financiou-presidente-da-cpi-do-mst/" target="_blank" rel="noopener">MST.org.br</a></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <h3 class="bloco-titulo veredito"><span class="bloco-emoji">⚖️</span> Meu veredito</h3>
+    <div class="veredito-box">
+      <p class="veredito-quote">Foi chefe de segurança de Lula e Dilma, hoje é o Bolsonaro do RS. Investigado pela PF, corta microfone de deputada, vota para acabar com o MPT. Para o bolsonarista fiel, é o nome. Para quem quer um governador de Estado, é um risco institucional.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MARANATA -->
+<section id="maranata" class="container candidato maranata fade-in">
+  <div class="candidato-header">
+    <span class="candidato-tag">PSDB</span>
+    <h2 class="candidato-nome">Marcelo Maranata</h2>
+    <p class="candidato-vice">Vice: a definir · Empresário · Ex-prefeito de Guaíba (2021-2024)</p>
+  </div>
+
+  <div class="bloco">
+    <h3 class="bloco-titulo"><span class="bloco-emoji">👤</span> Quem é</h3>
+    <div class="bloco-conteudo">
+      <p>Empresário há 35 anos, ex-prefeito de Guaíba (2021-2024), <strong>reeleito com quase 80% dos votos</strong>. Saiu do cargo em abril/2026 para concorrer ao governo.</p>
+      <p>Vice: <strong>a definir</strong>. É o único dos quatro sem chapa completa. <strong>Primeira vez</strong> que disputa cargo estadual.</p>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <h3 class="bloco-titulo"><span class="bloco-emoji">📋</span> O que promete</h3>
+    <div class="bloco-conteudo">
+      <ul>
+        <li><strong>5 eixos:</strong> desenvolvimento, saúde, educação, infraestrutura, inovação.</li>
+        <li><strong>1º cluster brasileiro de saúde</strong> (hospitais + universidades + pesquisa + empresas de tecnologia).</li>
+        <li><strong>2.000 escolas de empreendedorismo.</strong></li>
+        <li><strong>Secretaria Especial de Desenvolvimento da Zona Sul</strong> — única proposta regional entre os quatro.</li>
+        <li><strong>IPVA zero para híbridos</strong> (estender o benefício atual dos elétricos).</li>
+        <li><strong>Nova modelagem de pedágios</strong> (referência: Santa Catarina).</li>
+        <li><strong>"Radicalmente contra imposto"</strong> + diversificação de modais (aeroportos, ferrovias, hidrovias, portos).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <h3 class="bloco-titulo problema"><span class="bloco-emoji">🚨</span> O PROBLEMA</h3>
+    <div class="problema-box bloco-conteudo">
+      <p><strong>Só conhece Guaíba.</strong> E Guaíba foi um desastre. 6 calamidades em 5 anos (pandemia, vendavais, enchentes). Observatório Social apontou que receita cresceu 91% e despesa cresceu 108% no mandato dele. Não terminou o mandato.</p>
+      <p class="pergunta">Como a experiência em uma cidade média de 24ª economia do RS escala para 497 municípios, 19 regiões e 100 mil servidores estaduais?</p>
+      <p><strong>Vice indefinido até o fim do processo.</strong> Sinal de dificuldade de articulação política.</p>
+      <p><strong>"Radicalmente contra imposto" + programa de R$ bilhões = economia de cartaz.</strong> Propõe 2.000 escolas, cluster de saúde, IPVA zero para híbridos, Banrisul público subsidiando crédito, Secretaria Especial. Sem imposto novo, sem endividamento novo, sem cortes — <strong>a conta não fecha</strong>.</p>
+      <p><strong>"2.000 escolas de empreendedorismo" = o número mágico.</strong> Não respondeu onde ficam os professores, qual o currículo, qual o material, qual o custo. É um número de outdoor — grande o suficiente pra manchete, vazio o suficiente pra não comprometer.</p>
+      <p><strong>"1º cluster brasileiro de saúde"</strong> é proposta-emblema que <strong>já existe em execução</strong> em diferentes formatos no Brasil, inclusive na gestão Leite no RS. Não explicou o que o "dele" tem de diferente.</p>
+      <p><strong>Conflito de interesse: o candidato-empresário.</strong> 35 anos de empresa, discurso centrado em "enxergar a dor do empresário". O Piratini licencia, regula, fiscaliza e concede.</p>
+      <p class="pergunta">A pergunta: como vai separar o interesse privado do público?</p>
+      <p><strong>Sem coligação, sem palanque nacional.</strong> Única campanha que não tem máquina partidária de peso nem alinhamento com Lula/Bolsonaro/Caiado/Flávio. Vantagem: sem amarras. Desvantagem: sem musculatura.</p>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <h3 class="bloco-titulo"><span class="bloco-emoji">🔍</span> A evidência</h3>
+    <div class="evidencia-lista">
+      <div class="evidencia-item">
+        <span class="evidencia-num">1</span>
+        <span class="evidencia-texto"><strong>Observatório Social de Guaíba — receita 91% × despesa 108%:</strong> <a href="https://www.reporterguaibense.com.br/noticia/observatorio-social-de-guaiba-apresenta-as-contas-publicas-do-primeiro-governo-do-prefeito-marcelo-maranata" target="_blank" rel="noopener">Repórter Guaibense</a></span>
+      </div>
+      <div class="evidencia-item">
+        <span class="evidencia-num">2</span>
+        <span class="evidencia-texto"><strong>6 calamidades em 5 anos em Guaíba:</strong> <a href="https://www.reporterguaibense.com.br/noticia/apos-seis-calamidades-em-cinco-anos-prefeito-de-guaiba-defende-gestao-e-diz-que-cidade-esta-melhor-do-que-quando-assumiu" target="_blank" rel="noopener">Repórter Guaibense</a></span>
+      </div>
+      <div class="evidencia-item">
+        <span class="evidencia-num">3</span>
+        <span class="evidencia-texto"><strong>Propostas sem fonte — entrevista:</strong> <a href="https://www.youtube.com/watch?v=t2kAbQ2zsRk" target="_blank" rel="noopener">Clic Rádio</a></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <h3 class="bloco-titulo veredito"><span class="bloco-emoji">⚖️</span> Meu veredito</h3>
+    <div class="veredito-box">
+      <p class="veredito-quote">É o candidato-empresário que só administrou uma cidade, com vice indefinido, programa de R$ bilhões sem fonte de receita e o número mágico "2.000 escolas" como bandeira. Boa intenção, frágil execução.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VEREDITO FINAL -->
+<section id="final" class="container fade-in">
+  <div class="final-section">
+    <h2>⚖️ O veredito final</h2>
+    <p>Olhando os quatro, o que cada um tem de <strong>único e intransferível</strong> que justifique o voto?</p>
+
+    <div class="diferenciais-grid">
+      <div class="diferencial brizola">
+        <div class="diferencial-nome">🟥 Brizola</div>
+        <div class="diferencial-valor">o sobrenome</div>
+      </div>
+      <div class="diferencial souza">
+        <div class="diferencial-nome">🟦 Souza</div>
+        <div class="diferencial-valor">a máquina (e o ônus dela)</div>
+      </div>
+      <div class="diferencial zucco">
+        <div class="diferencial-nome">🟨 Zucco</div>
+        <div class="diferencial-valor">o bolsonarismo</div>
+      </div>
+      <div class="diferencial maranata">
+        <div class="diferencial-nome">🟩 Maranata</div>
+        <div class="diferencial-valor">o capital</div>
+      </div>
     </div>
 
-    <div class="podre fade-in">
-      <span class="numero">10</span>
-      <h3><span class="badge-podre">RETÓRICA</span> Discurso "contra velha política" — mas é do PL</h3>
-      <p>O PL no RS tem uma das bancadas mais fisiológicas da Assembleia. O partido do governo Bolsonaro no RS votou com Bolsonaro em tudo, inclusive pautas que <strong>prejudicaram o Estado</strong> (tentativa de mudar a regra da dívida, por exemplo).</p>
-      <p>Zucco fala como se fosse outsider, mas é <strong>produto do sistema</strong>.</p>
+    <p class="final-conclusao">Nenhum dos quatro tem a combinação que eu procuraria: <strong>histórico consistente com o discurso, competência executiva comprovada, viabilidade fiscal explícita do programa e integridade institucional sem questionamentos relevantes.</strong></p>
+    <p class="final-conclusao">Por isso, depois de cruzar tudo, <strong>não voto em nenhum deles.</strong></p>
+
+    <div class="pergunta-final">
+      A pergunta que fica, então, é simples: <strong>qual deles te convence?</strong><br><br>
+      Se nenhum te convence, talvez a resposta mais honesta seja a que pesquisei — e não votar em nenhum.
     </div>
+  </div>
+</section>
 
-    <div class="podre fade-in">
-      <span class="numero">11</span>
-      <h3><span class="badge-podre">APOIO</span> Apoiou Bolsonaro nas políticas que destruíram o RS</h3>
-      <p>Teve cargo no governo Bolsonaro, <strong>votou com a base em pautas que afetaram a economia gaúcha</strong> (reforma da Previdência, congelamento de gastos, teto de gastos). Hoje fala em <em>"investir em saúde"</em> e <em>"aumentar receita"</em> — sem reconhecer que as mesmas pautas que ele apoiou enforcam agora os cofres estaduais.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">12</span>
-      <h3><span class="badge-podre">OMISSÃO</span> Caso Master/Vorcaro — silêncio conveniente</h3>
-      <p>Não é investigado, mas é aliado político do caldo institucional que envolveu o escândalo. O Master tinha relações com agentes do <strong>PL no RS e em Brasília</strong>. Sem envolvimento pessoal dele, mas o link político existe. Ele nunca se posicionou publicamente sobre o caso. <strong>Omissão conveniente</strong>.</p>
-      <div class="fonte">📰 Fontes: <a href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2022/11/16/policia-aponta-deputado-federal-zucco-mais-votado-do-rs-como-incentivador-de-bloqueios-ilegais.ghtml" target="_blank" rel="noopener">G1 — Zucco investigado</a> · <a href="https://www.cnnbrasil.com.br/eleicoes/justica-intima-zucco-por-falta-de-plano-de-governo-em-candidatura-no-rs/" target="_blank" rel="noopener">CNN — TRE intima Zucco</a> · <a href="https://www.cartacapital.com.br/politica/da-seguranca-de-dilma-ao-bolsonarismo-quem-e-o-deputado-zucco-presidente-da-cpi-do-mst/" target="_blank" rel="noopener">CartaCapital — Perfil Zucco</a></div>
-    </div>
-  </section>
-
-  <!-- MARANATA -->
-  <section id="maranata" class="section fade-in">
-    <div class="candidato-header maranata">
-      <h2>🟩 Marcelo Maranata <span class="partido-tag">PSDB</span></h2>
-      <p class="subtitle">Vice: a definir · Empresário · Ex-prefeito de Guaíba (2021-2024)</p>
-      <div class="resumo">O candidato que só conhece Guaíba (e mesmo lá gastou mais do que arrecadou), não terminou o mandato, tem vice indefinido, promete "contra imposto" e "tudo para o povo" sem dizer a fonte.</div>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">01</span>
-      <h3><span class="badge-podre">EXPERIÊNCIA</span> Só conhece Guaíba — e Guaíba foi um desastre</h3>
-      <p>Foi prefeito de <strong>Guaíba</strong> (1 mandato, 2021-2024), cidade com 24ª economia do RS e que sofreu <strong>6 calamidades em 5 anos</strong> (pandemia, vendavais, enchentes). Reeleito com quase 80% — o que prova o poder local, mas não que o trabalho tenha sido bom.</p>
-      <p>O Observatório Social de Guaíba apontou: <strong>receita cresceu 91% (2020-2024) mas despesa cresceu 108%</strong>. Município gastou mais do que arrecadou — exatamente o que ele promete evitar no Estado.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">02</span>
-      <h3><span class="badge-podre">CONDUTA</span> Não terminou o mandato — e ainda ataca quem aponta isso</h3>
-      <p>Saiu do cargo em <strong>abril/2026</strong> para se candidatar — o que é legal (desincompatibilização), mas que ele transformou em pano de fundo moral ao atacar a Juliana por <em>"trair"</em> correligionários.</p>
-      <p><strong>Hipocrisia</strong>: ataca os outros por trocar de função, mas ele mesmo abandonou o cargo que o elegeram em Guaíba antes do prazo. Brizola usou isso contra ele no debate da Band.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">03</span>
-      <h3><span class="badge-podre">CHAPA</span> Vice indefinido — amadorismo</h3>
-      <p>Vários nomes circularam (Hernani Polo, Daniel Centeno, outros). Em 13/ago, <strong>a vice não estava fechada</strong>. É o único dos 4 principais candidatos sem chapa completa. Sinal de falta de musculatura política e de dificuldade de encontrar alguém que aceite ficar ao lado dele.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">04</span>
-      <h3><span class="badge-podre">ECONOMIA</span> "Radicalmente contra imposto" — mas como pagar tudo?</h3>
-      <p>Propõe: 2.000 escolas de empreendedorismo, 1º cluster de saúde, IPVA zero para híbridos, Banrisul como braço de crédito agrícola, Secretaria Especial da Zona Sul, novo modelo de pedágio. <strong>Não diz de onde vem o dinheiro</strong>. O Estado tem dívida de R$ 100 bi. Sem imposto novo, sem endividamento, sem cortes: a conta não fecha.</p>
-      <p>É economia de cartaz.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">05</span>
-      <h3><span class="badge-podre">PROGRAMA</span> "1º cluster de saúde do Brasil" — promessa genérica repetida</h3>
-      <p>Apresentou como carro-chefe. Mas a proposta de cluster de saúde <strong>já foi feita por outros governantes</strong> e está em execução (a da gestão Leite, com Hospital de Clínicas e parceiros). A diferença que ele não explicou: o que o dele tem de melhor? É promessa de outdoor.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">06</span>
-      <h3><span class="badge-podre">PROGRAMA</span> "2.000 escolas de empreendedorismo" — sem pé</h3>
-      <p>2.000 é número mágico. Equivale a uma escola por município, mais 500 adicionais. Mas <strong>onde ficam os professores? Quem produz o material? Com qual currículo?</strong> Não respondeu nada disso. É a mesma categoria do <em>"1 milhão de árvores"</em> da era Dilma — número que soa bem, significa pouco.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">07</span>
-      <h3><span class="badge-podre">CONFLITO</span> Conflito de interesse: o candidato-empresário</h3>
-      <p>Empresário há 35 anos. Discurso de <em>"enxergar a dor do empresário"</em>. <strong>Quem fiscaliza quem?</strong> A proximidade com o setor privado fica sem resposta quando o candidato é parte do setor. O cargo de governador dá poder de licitar, regular, fiscalizar. Um empresário sentado no Piratini tende a tratar setor privado como cliente, não como regulado.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">08</span>
-      <h3><span class="badge-podre">ALIANÇA</span> Sem coligação e sem palanque nacional</h3>
-      <p>Único dos 4 sem aliança de peso. <strong>Sem palanque de Lula, Bolsonaro, Caiado ou Flávio</strong>. Isso significa menos tempo de TV, menos dinheiro de fundo partidário, menos musculatura para ganhar. Mas também significa nenhuma estrutura para governar se ganhar. Vai depender de alianças de última hora no segundo turno.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">09</span>
-      <h3><span class="badge-podre">PARTIDO</span> PSDB gaúcho = máquina fisiológica</h3>
-      <p>Fala em <em>"contra a velha política"</em>, mas o <strong>tucanos gaúchos são uma das máquinas mais tradicionais</strong> do estado (vínculos históricos com Leite, Sartori, Yeda Crusius). É incoerência — ou é marketing de superfície.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">10</span>
-      <h3><span class="badge-podre">COERÊNCIA</span> Defesa do Banrisul público + Estado "contra imposto" = incoerência</h3>
-      <p>Defende manter o <strong>Banrisul público</strong> como braço de crédito agrícola. Isso é gasto público (subsidiado). Mas promete <em>"radicalmente contra imposto"</em> para financiar tudo. <strong>Sem imposto, sem subsídio, sem endividamento</strong> — qual é a fonte?</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">11</span>
-      <h3><span class="badge-podre">DEBATE</span> Aparece pouco nos debates — e quando aparece, não brilha</h3>
-      <p>Foi considerado <em>"pouco propositivo"</em> no debate da Gaúcha. No debate da Band, foi eficaz nos ataques, mas não apresentou plano claro para nada. Modelo de <em>"perguntar, mas não responder"</em> — habilidade de debatedor, não de governante.</p>
-    </div>
-
-    <div class="podre fade-in">
-      <span class="numero">12</span>
-      <h3><span class="badge-podre">RETÓRICA</span> Fala de "autoestima do povo gaúcho" — populismo emocional</h3>
-      <p>Disse no debate: <em>"O maior desafio do próximo governador é levantar a autoestima do povo gaúcho"</em>. Pergunta séria: qual programa faz isso? <em>"Autoestima"</em> é categoria de coach, não de política pública. O gaúcho quer serviço funcionando, não coach no Piratini.</p>
-      <div class="fonte">📰 Fontes: <a href="https://www.reporterguaibense.com.br/noticia/observatorio-social-de-guaiba-apresenta-as-contas-publicas-do-primeiro-governo-do-prefeito-marcelo-maranata" target="_blank" rel="noopener">Repórter Guaibense — Contas públicas</a> · <a href="https://ciccaxias.org.br/noticias/2026/06/22/marcelo-maranata-propoe-agenda-de-infraestrutura-saude-e-qualificacao-para-o-rs/" target="_blank" rel="noopener">CIC Caxias — Propostas</a></div>
-    </div>
-  </section>
-
-  <!-- TABELA COMPARATIVA -->
-  <section id="tabela" class="section fade-in">
-    <h2 class="section-title"><span class="emoji">📊</span> Comparação direta</h2>
-    <p style="color: var(--text-soft); margin-bottom: 20px;">Tabela interativa — clique no cabeçalho de uma coluna para ordenar. Critérios: diferencial central de cada um, principal fragilidade e quem ataca quem.</p>
-
-    <div class="tabela-wrapper">
-      <table id="tabelaComparativa">
-        <thead>
-          <tr>
-            <th data-sort="candidato">Candidato <span class="sort-icon">⇅</span></th>
-            <th data-sort="partido">Partido <span class="sort-icon">⇅</span></th>
-            <th data-sort="diferencial">Diferencial <span class="sort-icon">⇅</span></th>
-            <th data-sort="podre">"Podre" central <span class="sort-icon">⇅</span></th>
-            <th data-sort="ataque">Quem ataca <span class="sort-icon">⇅</span></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>🟥 Juliana Brizola</td>
-            <td>PDT</td>
-            <td>O sobrenome do avô</td>
-            <td>Carreira construída em cima do sobrenome + 3 mudanças de aliança</td>
-            <td>Maranata, Zucco</td>
-          </tr>
-          <tr>
-            <td>🟦 Gabriel Souza</td>
-            <td>MDB</td>
-            <td>A máquina do governo</td>
-            <td>Herda o governo Leite e não responde por ele</td>
-            <td>Todos (Brizola, Zucco, Maranata)</td>
-          </tr>
-          <tr>
-            <td>🟨 Luciano Zucco</td>
-            <td>PL</td>
-            <td>O bolsonarismo</td>
-            <td>Investigado pela PF por 8/jan + cortou microfone de deputada</td>
-            <td>Brizola, Maranata</td>
-          </tr>
-          <tr>
-            <td>🟩 Marcelo Maranata</td>
-            <td>PSDB</td>
-            <td>O capital privado</td>
-            <td>Só conhece Guaíba + vice indefinido + conflito de interesse</td>
-            <td>Brizola, Souza</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- FONTES -->
-  <section id="fontes" class="section fade-in">
-    <h2 class="section-title"><span class="emoji">📚</span> Fontes consultadas</h2>
-    <p style="color: var(--text-soft); margin-bottom: 20px;">Todas as afirmações deste dossiê estão baseadas nestas fontes primárias. Clique para abrir.</p>
-
-    <h3 style="margin: 24px 0 16px; color: var(--text);">🟥 Juliana Brizola</h3>
+<!-- FONTES -->
+<section class="container">
+  <div class="fontes-section">
+    <h3>📚 Fontes consultadas</h3>
     <div class="fontes-grid">
-      <div class="fonte-item">
-        <span class="veiculo">GZH</span>
-        <span class="titulo-fonte">Conheça Juliana Brizola, candidata ao governo do RS</span>
-        <a href="https://gauchazh.clicrbs.com.br/politica/eleicoes/noticia/2026/08/conheca-juliana-brizola-candidata-ao-governo-do-rio-grande-do-sul-pelo-pdt-cmsgumuq3019j016jgukmrg18.html" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">iG Último Segundo</span>
-        <span class="titulo-fonte">Quem é Juliana Brizola, candidata ao governo do RS pelo PDT?</span>
-        <a href="https://ultimosegundo.ig.com.br/2026-07-29/quem-e-juliana-brizola--candidata-ao-governo-do-rs-pelo-pdt-.html" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">G1</span>
-        <span class="titulo-fonte">PDT lança Juliana Brizola como candidata ao governo do RS</span>
-        <a href="https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/07/25/pdt-lanca-juliana-brizola-como-candidata-ao-governo-do-rs.ghtml" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">Brasil de Fato</span>
-        <span class="titulo-fonte">Juliana Brizola recebe relatório final de discussões temáticas para plano de governo</span>
-        <a href="https://www.brasildefato.com.br/2026/07/20/juliana-brizola-recebe-relatorio-final-de-discussoes-tematicas-para-plano-de-governo/" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
+      <a class="fonte-link" href="https://gauchazh.clicrbs.com.br/politica/eleicoes/noticia/2026/08/conheca-juliana-brizola-candidata-ao-governo-do-rio-grande-do-sul-pelo-pdt-cmsgumuq3019j016jgukmrg18.html" target="_blank" rel="noopener">GZH — Juliana Brizola</a>
+      <a class="fonte-link" href="https://gauchazh.clicrbs.com.br/politica/eleicoes/noticia/2026/08/conheca-gabriel-souza-candidato-ao-governo-do-rio-grande-do-sul-pelo-mdb-cmsgqmu2k0192013liqysaxg8.html" target="_blank" rel="noopener">GZH — Gabriel Souza</a>
+      <a class="fonte-link" href="https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/07/25/pdt-lanca-juliana-brizola-como-candidata-ao-governo-do-rs.ghtml" target="_blank" rel="noopener">G1 — PDT lança Juliana</a>
+      <a class="fonte-link" href="https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/08/01/mdb-lanca-gabriel-souza-como-candidato-ao-governo-do-rs.ghtml" target="_blank" rel="noopener">G1 — MDB lança Gabriel</a>
+      <a class="fonte-link" href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2022/11/16/policia-aponta-deputado-federal-zucco-mais-votado-do-rs-como-incentivador-de-bloqueios-ilegais.ghtml" target="_blank" rel="noopener">G1 — Zucco investigado</a>
+      <a class="fonte-link" href="https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/08/12/tre-rs-intima-zucco-por-ausencia-de-plano-de-governo-no-registro-de-candidatura.ghtml" target="_blank" rel="noopener">G1 — TRE intima Zucco</a>
+      <a class="fonte-link" href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2026/08/11/rs-faz-nova-proposta-ao-governo-federal-para-pagamento-de-divida-de-r-100-bilhoes-com-a-uniao.ghtml" target="_blank" rel="noopener">G1 — Dívida RS R$ 100 bi</a>
+      <a class="fonte-link" href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2026/07/22/promessas-eduardo-leite-governador-do-rio-grande-do-sul.ghtml" target="_blank" rel="noopener">G1 — Promessas Leite</a>
+      <a class="fonte-link" href="https://www.cartacapital.com.br/politica/da-seguranca-de-dilma-ao-bolsonarismo-quem-e-o-deputado-zucco-presidente-da-cpi-do-mst/" target="_blank" rel="noopener">CartaCapital — Perfil Zucco</a>
+      <a class="fonte-link" href="https://mst.org.br/2023/05/24/condenado-por-trabalho-escravo-financiou-presidente-da-cpi-do-mst/" target="_blank" rel="noopener">MST.org.br — Financiamento e MPT</a>
+      <a class="fonte-link" href="https://www.cnnbrasil.com.br/eleicoes/justica-intima-zucco-por-falta-de-plano-de-governo-em-candidatura-no-rs/" target="_blank" rel="noopener">CNN — Justiça intima Zucco</a>
+      <a class="fonte-link" href="https://www.reporterguaibense.com.br/noticia/observatorio-social-de-guaiba-apresenta-as-contas-publicas-do-primeiro-governo-do-prefeito-marcelo-maranata" target="_blank" rel="noopener">Repórter Guaibense — Observatório</a>
+      <a class="fonte-link" href="https://www.reporterguaibense.com.br/noticia/apos-seis-calamidades-em-cinco-anos-prefeito-de-guaiba-defende-gestao-e-diz-que-cidade-esta-melhor-do-que-quando-assumiu" target="_blank" rel="noopener">Repórter Guaibense — 6 calamidades</a>
+      <a class="fonte-link" href="https://ciccaxias.org.br/noticias/2026/06/22/marcelo-maranata-propoe-agenda-de-infraestrutura-saude-e-qualificacao-para-o-rs/" target="_blank" rel="noopener">CIC Caxias — Maranata</a>
+      <a class="fonte-link" href="https://sbtnews.sbt.com.br/noticia/politica/juliana-brizola-propoe-fundo-para-sul-e-critica-gestao-do-rs" target="_blank" rel="noopener">SBT News — Brizola fundo Sul</a>
+      <a class="fonte-link" href="https://www.correiodopovo.com.br/not%C3%ADcias/pol%C3%ADtica/farei-o-maior-programa-de-irrigacao-da-historia-afirma-gabriel-souza-ao-detalhar-metas-1.1709464" target="_blank" rel="noopener">Correio do Povo — irrigação Gabriel</a>
+      <a class="fonte-link" href="https://www.brasildefato.com.br/2026/08/10/primeiro-debate-na-tv-para-o-governo-do-rs-expoe-divergencias/" target="_blank" rel="noopener">Brasil de Fato — debate Band</a>
+      <a class="fonte-link" href="https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/08/06/debate-no-rs-tem-troca-de-acusacoes-ataques-diretos-e-poucas-propostas.ghtml" target="_blank" rel="noopener">G1 — debate Gaúcha</a>
     </div>
-
-    <h3 style="margin: 24px 0 16px; color: var(--text);">🟦 Gabriel Souza</h3>
-    <div class="fontes-grid">
-      <div class="fonte-item">
-        <span class="veiculo">G1</span>
-        <span class="titulo-fonte">MDB lança Gabriel Souza como candidato ao governo do RS</span>
-        <a href="https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/08/01/mdb-lanca-gabriel-souza-como-candidato-ao-governo-do-rs.ghtml" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">GZH</span>
-        <span class="titulo-fonte">MDB homologa candidatura de Gabriel Souza ao Palácio Piratini</span>
-        <a href="https://gauchazh.clicrbs.com.br/politica/eleicoes/noticia/2026/08/mdb-homologa-candidatura-de-gabriel-souza-ao-palacio-piratini-cmsarixpz00z801jll6d8l1gm.html" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">Correio do Povo</span>
-        <span class="titulo-fonte">Farei o maior programa de irrigação da história, afirma Gabriel Souza</span>
-        <a href="https://www.correiodopovo.com.br/not%C3%ADcias/pol%C3%ADtica/farei-o-maior-programa-de-irrigacao-da-historia-afirma-gabriel-souza-ao-detalhar-metas-1.1709464" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">G1</span>
-        <span class="titulo-fonte">Promessas de Eduardo Leite: veja o que foi cumprido no RS</span>
-        <a href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2026/07/22/promessas-eduardo-leite-governador-do-rio-grande-do-sul.ghtml" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-    </div>
-
-    <h3 style="margin: 24px 0 16px; color: var(--text);">🟨 Luciano Zucco</h3>
-    <div class="fontes-grid">
-      <div class="fonte-item">
-        <span class="veiculo">G1</span>
-        <span class="titulo-fonte">Polícia identifica 'incentivo' de Zucco em bloqueios ilegais</span>
-        <a href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2022/11/16/policia-aponta-deputado-federal-zucco-mais-votado-do-rs-como-incentivador-de-bloqueios-ilegais.ghtml" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">CNN Brasil</span>
-        <span class="titulo-fonte">Justiça intima Zucco por falta de plano de governo em candidatura</span>
-        <a href="https://www.cnnbrasil.com.br/eleicoes/justica-intima-zucco-por-falta-de-plano-de-governo-em-candidatura-no-rs/" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">CartaCapital</span>
-        <span class="titulo-fonte">Da segurança de Dilma ao bolsonarismo: quem é Zucco</span>
-        <a href="https://www.cartacapital.com.br/politica/da-seguranca-de-dilma-ao-bolsonarismo-quem-e-o-deputado-zucco-presidente-da-cpi-do-mst/" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">iG Último Segundo</span>
-        <span class="titulo-fonte">Quem é o presidente da CPI do MST investigado pela PF</span>
-        <a href="https://ultimosegundo.ig.com.br/politica/2023-05-24/quem-e-o-presidente-da-cpi-do-mst-investigado-pela-pf.html" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">RDLider</span>
-        <span class="titulo-fonte">Zucco defende novo modelo de gestão para o RS</span>
-        <a href="https://rdlider.com.br/2026/06/23/luciano-zucco-defende-novo-modelo-de-gestao-para-o-rio-grande-do-sul-e-apresenta-propostas-para-desenvolvimento-seguranca-e-educacao/" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-    </div>
-
-    <h3 style="margin: 24px 0 16px; color: var(--text);">🟩 Marcelo Maranata</h3>
-    <div class="fontes-grid">
-      <div class="fonte-item">
-        <span class="veiculo">Repórter Guaibense</span>
-        <span class="titulo-fonte">Observatório Social de Guaíba apresenta as contas públicas do governo Maranata</span>
-        <a href="https://www.reporterguaibense.com.br/noticia/observatorio-social-de-guaiba-apresenta-as-contas-publicas-do-primeiro-governo-do-prefeito-marcelo-maranata" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">CIC Caxias</span>
-        <span class="titulo-fonte">Marcelo Maranata propõe agenda de infraestrutura, saúde e qualificação para o RS</span>
-        <a href="https://ciccaxias.org.br/noticias/2026/06/22/marcelo-maranata-propoe-agenda-de-infraestrutura-saude-e-qualificacao-para-o-rs/" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">Repórter Guaibense</span>
-        <span class="titulo-fonte">Maranata apresenta resultados e diz que Guaíba está melhor</span>
-        <a href="https://www.reporterguaibense.com.br/noticia/apos-seis-calamidades-em-cinco-anos-prefeito-de-guaiba-defende-gestao-e-diz-que-cidade-esta-melhor-do-que-quando-assumiu" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">Revista em Evidência</span>
-        <span class="titulo-fonte">Gestão de Marcelo Maranata transforma Guaíba</span>
-        <a href="https://revistaemevidencia.com.br/em-evidencia/prefeito-guaiba-marcelo-maranata/" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-    </div>
-
-    <h3 style="margin: 24px 0 16px; color: var(--text);">🔥 Debates e casos transversais</h3>
-    <div class="fontes-grid">
-      <div class="fonte-item">
-        <span class="veiculo">G1</span>
-        <span class="titulo-fonte">Debate ao governo do RS 2026: candidatos trocam ataques</span>
-        <a href="https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/08/06/debate-no-rs-tem-troca-de-acusacoes-ataques-diretos-e-poucas-propostas.ghtml" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">G1</span>
-        <span class="titulo-fonte">Candidatos exploram pontos fracos de adversários (debate Band)</span>
-        <a href="https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/08/09/debate-candidatos-governo-rs-buscam-explorar-pontos-fracos-adversarios.ghtml" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">Brasil de Fato</span>
-        <span class="titulo-fonte">Primeiro debate na TV para o governo do RS</span>
-        <a href="https://www.brasildefato.com.br/2026/08/10/primeiro-debate-na-tv-para-o-governo-do-rs-expoe-divergencias/" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">Correio do Povo</span>
-        <span class="titulo-fonte">Eleições 2026: conheça as prioridades dos pré-candidatos</span>
-        <a href="https://www.correiodopovo.com.br/not%C3%ADcias/pol%C3%ADtica/elei%C3%A7%C3%B5es-2026-conheca-as-prioridades-dos-pre-candidatos-ao-governo-gaucho-1.1717572" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">GZH</span>
-        <span class="titulo-fonte">Promessômetro: acompanhe as propostas dos candidatos</span>
-        <a href="https://gauchazh.clicrbs.com.br/politica/eleicoes/noticia/2026/08/promessometro-acompanhe-as-propostas-de-candidatos-ao-governo-do-rs-cmsg9k9l700zl013lfcde3o7o.html" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-      <div class="fonte-item">
-        <span class="veiculo">G1</span>
-        <span class="titulo-fonte">Veja quem são os candidatos a governador no RS em 2026</span>
-        <a href="https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/08/06/veja-quem-sao-os-candidatos-a-governador-no-rs-em-2026.ghtml" target="_blank" rel="noopener">Abrir fonte →</a>
-      </div>
-    </div>
-  </section>
-
-</main>
+  </div>
+</section>
 
 <footer>
-  <p>📄 Dossiê gerado em 13/ago/2026 · Eleição 1º turno: 04/out/2026</p>
-  <p style="margin-top: 8px;">Conteúdo editorial baseado em fontes públicas. Não constitui orientação de voto.</p>
+  <p>📄 Dossiê pessoal · Atualizado em 13/ago/2026</p>
+  <p>Eleição 1º turno: 04/out/2026 · 2º turno: 25/out/2026</p>
+  <p>Opinião documentada, não orientação de voto.</p>
 </footer>
 
-<button class="back-to-top" id="backToTop" title="Voltar ao topo">↑</button>
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
 
 </body>
 
