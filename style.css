@@ -1,0 +1,473 @@
+/* ====== RESET & BASE ====== */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+    overflow-x: hidden;
+  }
+  :root {
+    --bg: #0f1419;
+    --bg-soft: #1a1f2e;
+    --bg-card: #1e2330;
+    --border: #2a3142;
+    --text: #e6e9ef;
+    --text-soft: #9ba3b4;
+    --accent: #ef4444;
+    --accent-soft: rgba(239, 68, 68, 0.1);
+    --brizola: #dc2626;
+    --souza: #2563eb;
+    --zucco: #eab308;
+    --maranata: #16a34a;
+    --shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  body.light-mode {
+    --bg: #f5f5f7;
+    --bg-soft: #ffffff;
+    --bg-card: #ffffff;
+    --border: #e5e7eb;
+    --text: #1a1a1a;
+    --text-soft: #6b7280;
+    --accent: #dc2626;
+    --accent-soft: rgba(220, 38, 38, 0.08);
+    --shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); transition: opacity 0.2s; }
+  a:hover { opacity: 0.7; }
+
+  /* ====== HERO ====== */
+  .hero {
+    background: linear-gradient(135deg, #1a0000 0%, #2d0a0a 50%, #0a0a0a 100%);
+    color: white;
+    padding: 80px 24px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  body.light-mode .hero {
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 50%, #ffffff 100%);
+    color: #1a1a1a;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(239, 68, 68, 0.15) 0%, transparent 50%);
+    animation: pulse 8s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+  }
+  .hero-content { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+  .hero h1 .accent { color: var(--accent); }
+  .hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto 12px;
+  }
+  .hero .meta {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-top: 16px;
+  }
+  .hero .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  .hero .badge {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  body.light-mode .hero .badge {
+    background: rgba(0,0,0,0.05);
+    border-color: rgba(0,0,0,0.1);
+  }
+
+  /* ====== CONTROLS ====== */
+  .controls {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    backdrop-filter: blur(10px);
+  }
+  .controls .nav-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .controls .nav-tab {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-soft);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  .controls .nav-tab:hover {
+    background: var(--accent-soft);
+    color: var(--text);
+  }
+  .controls .nav-tab.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+  }
+  .controls .theme-toggle {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+  }
+  .controls .theme-toggle:hover { background: var(--accent-soft); }
+
+  /* ====== CONTAINER ====== */
+  .container { max-width: 1100px; margin: 0 auto; padding: 40px 24px; }
+
+  /* ====== SECTION ====== */
+  .section { margin-bottom: 60px; }
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-title .emoji { font-size: 1.5em; }
+
+  /* ====== CANDIDATO HEADER ====== */
+  .candidato-header {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+    border-left: 6px solid var(--candidato-color, var(--accent));
+  }
+  .candidato-header.brizola { --candidato-color: var(--brizola); }
+  .candidato-header.souza { --candidato-color: var(--souza); }
+  .candidato-header.zucco { --candidato-color: var(--zucco); }
+  .candidato-header.maranata { --candidato-color: var(--maranata); }
+
+  .candidato-header h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .candidato-header .partido-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: var(--candidato-color);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .candidato-header .subtitle {
+    color: var(--text-soft);
+    font-size: 0.95rem;
+  }
+  .candidato-header .resumo {
+    margin-top: 16px;
+    padding: 16px;
+    background: var(--bg-soft);
+    border-radius: 8px;
+    font-style: italic;
+    border-left: 3px solid var(--candidato-color);
+  }
+
+  /* ====== PODRE CARDS ====== */
+  .podre {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .podre:hover {
+    transform: translateY(-2px);
+    border-color: var(--candidato-color);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  }
+  .podre .numero {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--candidato-color);
+    opacity: 0.2;
+    line-height: 1;
+  }
+  .podre h3 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    color: var(--text);
+    padding-right: 60px;
+  }
+  .podre h3 .badge-podre {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  .podre p, .podre ul { color: var(--text-soft); font-size: 0.95rem; }
+  .podre ul { margin-left: 20px; margin-top: 8px; }
+  .podre ul li { margin-bottom: 4px; }
+  .podre strong { color: var(--text); }
+  .podre blockquote {
+    margin: 12px 0;
+    padding: 10px 16px;
+    background: var(--bg-soft);
+    border-left: 3px solid var(--candidato-color);
+    border-radius: 4px;
+    font-style: italic;
+    color: var(--text);
+  }
+  .podre .fonte {
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: var(--text-soft);
+  }
+  .podre .fonte a { color: var(--candidato-color); }
+
+  /* ====== TABELA COMPARATIVA ====== */
+  .tabela-wrapper {
+    overflow-x: auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+  }
+  th, td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+  }
+  th {
+    background: var(--bg-soft);
+    font-weight: 600;
+    color: var(--text);
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  th:hover { background: var(--accent-soft); }
+  th .sort-icon { opacity: 0.4; font-size: 0.8em; margin-left: 4px; }
+  th.sort-asc .sort-icon, th.sort-desc .sort-icon { opacity: 1; color: var(--accent); }
+  td { color: var(--text-soft); }
+  td:first-child { font-weight: 600; color: var(--text); }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: var(--bg-soft); }
+
+  /* ====== BOX FINAL ====== */
+  .final-box {
+    background: linear-gradient(135deg, var(--accent-soft) 0%, var(--bg-card) 100%);
+    border: 1px solid var(--accent);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: var(--shadow);
+  }
+  .final-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: var(--accent);
+  }
+  .diferenciais {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+  }
+  .diferencial {
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+  .diferencial .emoji { font-size: 2rem; display: block; margin-bottom: 8px; }
+  .diferencial strong { display: block; margin-bottom: 4px; }
+  .diferencial span { color: var(--text-soft); font-size: 0.9rem; }
+
+  /* ====== FONTES ====== */
+  .fontes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+  }
+  .fonte-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+  }
+  .fonte-item:hover {
+    background: var(--accent-soft);
+    transform: translateX(4px);
+  }
+  .fonte-item .veiculo {
+    display: block;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  .fonte-item .titulo-fonte {
+    display: block;
+    color: var(--text-soft);
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+  }
+  .fonte-item a {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 0.85rem;
+  }
+
+  /* ====== FOOTER ====== */
+  footer {
+    background: var(--bg-soft);
+    border-top: 1px solid var(--border);
+    padding: 32px 24px;
+    text-align: center;
+    color: var(--text-soft);
+    font-size: 0.85rem;
+  }
+
+  /* ====== BACK TO TOP ====== */
+  .back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s;
+    z-index: 99;
+  }
+  .back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .back-to-top:hover { background: #dc2626; transform: scale(1.1); }
+
+  /* ====== ANIMATION ====== */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ====== COUNTERS ====== */
+  .counters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .counter {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border-top: 4px solid var(--candidato-color);
+  }
+  .counter.brizola { --candidato-color: var(--brizola); }
+  .counter.souza { --candidato-color: var(--souza); }
+  .counter.zucco { --candidato-color: var(--zucco); }
+  .counter.maranata { --candidato-color: var(--maranata); }
+  .counter .numero-counter {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--candidato-color);
+    line-height: 1;
+  }
+  .counter .label-counter {
+    color: var(--text-soft);
+    font-size: 0.85rem;
+    margin-top: 8px;
+  }
+
+  /* ====== MOBILE ====== */
+  @media (max-width: 768px) {
+    .hero { padding: 60px 16px 40px; }
+    .controls { padding: 10px 16px; }
+    .container { padding: 24px 16px; }
+    .candidato-header { padding: 20px; }
+    .candidato-header h2 { font-size: 1.5rem; }
+    .podre { padding: 16px; }
+    .podre h3 { padding-right: 50px; }
+    .podre .numero { font-size: 2rem; }
+  }
